@@ -11,7 +11,7 @@ class Agentsecrets < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/The-17/agentsecrets/releases/download/v1.1.0/agentsecrets_1.1.0_darwin_amd64.tar.gz"
-      sha256 "ea4d33e34d413ae73110c3bd805b72ff93d0d541ea141a4323920a9c4ea8de1c"
+      sha256 "9a81eb555c367e190923ee0e00c428d25c5b7747abf92cd0ad43b627408a9034"
 
       define_method(:install) do
         bin.install "agentsecrets"
@@ -19,7 +19,7 @@ class Agentsecrets < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/The-17/agentsecrets/releases/download/v1.1.0/agentsecrets_1.1.0_darwin_arm64.tar.gz"
-      sha256 "c8b673224d2a20d7abf76a49a5ae9f3aadf672a3a8575808eaf01f0f102e3991"
+      sha256 "ca79877304d9711afb1fd62bc629a30037c0ad4fb7638718de3e5616e8fa07fd"
 
       define_method(:install) do
         bin.install "agentsecrets"
@@ -30,14 +30,14 @@ class Agentsecrets < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/The-17/agentsecrets/releases/download/v1.1.0/agentsecrets_1.1.0_linux_amd64.tar.gz"
-      sha256 "e3236da5a2ad98426386349d2f82406b88885b7a252c6b8ca351eff0453a6e0d"
+      sha256 "ba679b1009f0f950a6f156c56b801e2d1e5065e390ccaaf429b17f71e82c8dae"
       define_method(:install) do
         bin.install "agentsecrets"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/The-17/agentsecrets/releases/download/v1.1.0/agentsecrets_1.1.0_linux_arm64.tar.gz"
-      sha256 "e4537e93b618917a9add405e033e4f33200c4138630689b9505b7e6394d60d51"
+      sha256 "50e8cb0990422d871b668102794387957b08e3d9189a6b162a51e52588bf4dcf"
       define_method(:install) do
         bin.install "agentsecrets"
       end
