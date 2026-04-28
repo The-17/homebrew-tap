@@ -11,7 +11,7 @@ class KeychainAuth < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/The-17/keychain-auth/releases/download/v0.1.0/keychain-auth_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cbc3257848e7f21725d5061bf8fb91d815b70808e1be66a504af82f337f57468"
+      sha256 "c9923bde4d6cb821ee9653b44a7ac5fa17b944afe0590d5c900fbac5b38841a6"
 
       define_method(:install) do
         bin.install "keychain-auth"
@@ -24,7 +24,7 @@ class KeychainAuth < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/The-17/keychain-auth/releases/download/v0.1.0/keychain-auth_0.1.0_darwin_arm64.tar.gz"
-      sha256 "71775bab3f2ac501b9ea072ce284bc98ca6161be6d35952b39da32cdbdf1d1af"
+      sha256 "622e154b2fa4684ee444d4d0f5662515a27a97dbebab41c862fdb4d09908f30e"
 
       define_method(:install) do
         bin.install "keychain-auth"
@@ -40,7 +40,7 @@ class KeychainAuth < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/The-17/keychain-auth/releases/download/v0.1.0/keychain-auth_0.1.0_linux_amd64.tar.gz"
-      sha256 "d094f8cd0552d1714e91807836290eaa3af46f71e831e1a1de7a51c172ea0a52"
+      sha256 "26a46190d47df418f869b6c6ee100b9558391a6787f2627444140520fd7a8696"
       define_method(:install) do
         bin.install "keychain-auth"
         if OS.mac?
@@ -52,7 +52,7 @@ class KeychainAuth < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/The-17/keychain-auth/releases/download/v0.1.0/keychain-auth_0.1.0_linux_arm64.tar.gz"
-      sha256 "23be28104c4753f416d783ce91c5a290c8d31b163907fdff8af085db29f4dc41"
+      sha256 "6f390182b736c709c5c5a91b70a14e00e97ae86382d5c51275eb236a10718ab4"
       define_method(:install) do
         bin.install "keychain-auth"
         if OS.mac?
