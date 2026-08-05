@@ -5,13 +5,13 @@
 class KeychainAuth < Formula
   desc "Security policy daemon for AgentSecrets"
   homepage "https://agentsecrets.theseventeen.co"
-  version "3.1.0"
+  version "3.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/The-17/keychain-auth/releases/download/v3.1.0/keychain-auth_3.1.0_darwin_amd64.tar.gz"
-      sha256 "3104f1f035a19574483ac483982e7f8c34e53b3cb63b116ff66679359de272a9"
+      url "https://github.com/The-17/keychain-auth/releases/download/v3.2.0/keychain-auth_3.2.0_darwin_amd64.tar.gz"
+      sha256 "4e29ad4f469f37a933ccf39b247882c987502fa69ff3ae772518dfb80828c45a"
 
       define_method(:install) do
         bin.install "keychain-auth"
@@ -23,8 +23,8 @@ class KeychainAuth < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/The-17/keychain-auth/releases/download/v3.1.0/keychain-auth_3.1.0_darwin_arm64.tar.gz"
-      sha256 "bf7c2267bec0670d7de4f0430a8d2a34b2cce2d4f01b82432f9106240bb468c8"
+      url "https://github.com/The-17/keychain-auth/releases/download/v3.2.0/keychain-auth_3.2.0_darwin_arm64.tar.gz"
+      sha256 "bf5a0cdb36addce7b7fc0b16b0c7326a6b24c31ca74f856d64bca5a8f349fef4"
 
       define_method(:install) do
         bin.install "keychain-auth"
@@ -39,8 +39,8 @@ class KeychainAuth < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-17/keychain-auth/releases/download/v3.1.0/keychain-auth_3.1.0_linux_amd64.tar.gz"
-      sha256 "10465860377749802d63cd156e2e097520ec7efbd1a91e9cc408e04ef2fac189"
+      url "https://github.com/The-17/keychain-auth/releases/download/v3.2.0/keychain-auth_3.2.0_linux_amd64.tar.gz"
+      sha256 "30c7312e3bc692df16b9a56fe0cdcfb6189889f739510da26a53f98ca5b5ced9"
       define_method(:install) do
         bin.install "keychain-auth"
         if OS.mac?
@@ -51,8 +51,8 @@ class KeychainAuth < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-17/keychain-auth/releases/download/v3.1.0/keychain-auth_3.1.0_linux_arm64.tar.gz"
-      sha256 "1c17b298b0af5fecbc66f9d497d146718f953a255546ea19c698d53a34294cd6"
+      url "https://github.com/The-17/keychain-auth/releases/download/v3.2.0/keychain-auth_3.2.0_linux_arm64.tar.gz"
+      sha256 "90735377d96d7e8567ea2cd5739291ec0489e534110bbc7c3442821ad99d7112"
       define_method(:install) do
         bin.install "keychain-auth"
         if OS.mac?
