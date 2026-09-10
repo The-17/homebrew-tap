@@ -5,21 +5,21 @@
 class Agentsecrets < Formula
   desc "Zero-knowledge credential firewall for the AI era"
   homepage "https://github.com/The-17/agentsecrets"
-  version "3.2.3"
+  version "3.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/The-17/agentsecrets/releases/download/v3.2.3/agentsecrets_3.2.3_darwin_amd64.tar.gz"
-      sha256 "4ea0ab7427f83acd183f4a1096825aff40e55364fc00d5e297f167b32cd20168"
+      url "https://github.com/The-17/agentsecrets/releases/download/v3.3.0/agentsecrets_3.3.0_darwin_amd64.tar.gz"
+      sha256 "b27593df41f0a4e783c4bb74b482798a26c93c225365bbea123aa86c8dddb6c0"
 
       define_method(:install) do
         bin.install "agentsecrets"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/The-17/agentsecrets/releases/download/v3.2.3/agentsecrets_3.2.3_darwin_arm64.tar.gz"
-      sha256 "bd52c2c3d64c5d751a5424f3f12e864ffe2a1fa0998c905c7b8974abf89a6192"
+      url "https://github.com/The-17/agentsecrets/releases/download/v3.3.0/agentsecrets_3.3.0_darwin_arm64.tar.gz"
+      sha256 "c1016fadf358e1bce3f31312ed68fe6106437d2696771ed6866b8814e2c762d7"
 
       define_method(:install) do
         bin.install "agentsecrets"
@@ -29,15 +29,15 @@ class Agentsecrets < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-17/agentsecrets/releases/download/v3.2.3/agentsecrets_3.2.3_linux_amd64.tar.gz"
-      sha256 "ef76e19e308afeec1f1c39aa5e67b6cb4ce738e60d7a5441b9bcd4580a6b4fa0"
+      url "https://github.com/The-17/agentsecrets/releases/download/v3.3.0/agentsecrets_3.3.0_linux_amd64.tar.gz"
+      sha256 "11beffccbb834d51167ace48263c3f3d8871240ac2c8bcf7ec9b73422d59b978"
       define_method(:install) do
         bin.install "agentsecrets"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/The-17/agentsecrets/releases/download/v3.2.3/agentsecrets_3.2.3_linux_arm64.tar.gz"
-      sha256 "724af1e2a3dfad1fd2caf39f474e8d0ea4ae3b07fdd5d78d78bd85c49877b045"
+      url "https://github.com/The-17/agentsecrets/releases/download/v3.3.0/agentsecrets_3.3.0_linux_arm64.tar.gz"
+      sha256 "8892d14c7040984af2c33e142da0badfcd5d7bcae8c80e63691e49ee60f0eac6"
       define_method(:install) do
         bin.install "agentsecrets"
       end
